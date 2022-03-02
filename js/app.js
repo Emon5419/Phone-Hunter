@@ -21,17 +21,17 @@ const displayError = error => {
 const displaySearchResult = phones => {
   const searchResult = document.getElementById('search-result');
   searchResult.textContent = '';
+
   phones.forEach(phone => {
     const div = document.createElement('div');
     div.classList.add('col');
     div.innerHTML = `
-        <div class="cards1 card mx-5 btn btn-outline-light">
+        <div class="text-center cards1 card mx-5">
             <img src="${phone.image}" class="img card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">${phone.phone_name}</h5>
-                <h5 class="card-title">${phone.slug}</h5>
             </div>
-            <button onclick="loadPhoneDetail('${phone.slug}')" type="button" class="col-2 btn btn-outline-primary w-25 m-auto"> Details </button>
+            <button onclick="loadPhoneDetail('${phone.slug}')" type="button" class="mb-2 col-2 btn btn-outline-primary w-25 m-auto"> Details </button>
         </div>
         `;
     searchResult.appendChild(div);
