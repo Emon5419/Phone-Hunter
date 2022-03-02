@@ -1,7 +1,7 @@
 body{
- font-family: 'Poppins', sans-serif;
- font-size: 15px;
- background-color: aliceblue;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+
 }
  .cards1 img {
       margin-top: 5px;
@@ -11,3 +11,4 @@ body{
       height: 200px;
 
     }
+  
